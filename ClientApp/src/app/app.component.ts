@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 declare var name: any;
 
@@ -8,6 +9,7 @@ declare var name: any;
 })
 export class AppComponent {
   title = 'app';
+  faCoffee = faCoffee;
 
 
 }
