@@ -1,0 +1,39 @@
+<!--<div class="row">
+  <div class="col-sm-3" *ngFor="let portfolioCard of portfolioCards">
+
+    <div class="card h-100 border-primary">
+      <img src="../assets/{{portfolioCard.imageFilename}}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{portfolioCard.title}}</h5>
+        <p class="card-text">{{portfolioCard.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<h2 class="text-center">Cerulean Portfolio</h2>
+
+<div class="row">
+  <div class="col-sm-3" *ngFor="let portfolioCard of portfolioCards">
+    <div class="solution_cards_box">
+      <div class="solution_card">
+        <div class="hover_color_bubble"></div>
+        <img src="../assets/{{portfolioCard.imageFilename}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{portfolioCard.title}}</h5>
+          <p class="card-text">{{portfolioCard.description}}</p>
+          <div *ngIf="portfolioCard.externalLink">
+            <a href="{{portfolioCard.externalLink}}" target="_blank" rel="noopener noreferrer">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+
+
