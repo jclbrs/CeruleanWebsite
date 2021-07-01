@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-declare var name: any;
+//import { faGamepad, faAddressBook, faExternalLinkAlt, faTachometerAlt, faUsers} from '@fortawesome/free-solid-svg-icons';
+//import { faBitcoin} from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,4 @@ declare var name: any;
 })
 export class AppComponent {
   title = 'app';
-  faCoffee = faCoffee;
-
-
 }
