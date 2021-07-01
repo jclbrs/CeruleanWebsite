@@ -14,6 +14,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MessagesComponent } from './messages/messages.component';
     PortfolioComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,11 +35,12 @@ import { MessagesComponent } from './messages/messages.component';
     FormsModule,
     FontAwesomeModule,
     RouterModule.forRoot([
-    { path: '', component: HomeComponent, pathMatch: 'full' },
-    { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'cerulean-portfolio', component: PortfolioComponent },
-      { path: 'heroes', component: HeroesComponent},
+      { path: 'cerulean-about', component: AboutComponent},
+    //{ path: 'counter', component: CounterComponent },
+    //  { path: 'fetch-data', component: FetchDataComponent },
+    //  { path: 'heroes', component: HeroesComponent},
 ], { relativeLinkResolution: 'legacy' })
   ],
   providers: [],
