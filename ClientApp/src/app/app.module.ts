@@ -15,6 +15,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AboutComponent } from './about/about.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,7 +39,8 @@ import { AboutComponent } from './about/about.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'cerulean-portfolio', component: PortfolioComponent },
-      { path: 'cerulean-about', component: AboutComponent},
+      { path: 'cerulean-about', component: AboutComponent },
+      { path: 'cerulean-contact', component: ContactComponent },
     //{ path: 'counter', component: CounterComponent },
     //  { path: 'fetch-data', component: FetchDataComponent },
     //  { path: 'heroes', component: HeroesComponent},
