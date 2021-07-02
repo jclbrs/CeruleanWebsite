@@ -1,0 +1,46 @@
+<div><h3>Testing different animation concepts</h3></div>
+<div>-------------------------------------------</div>
+
+<div class="card testCard">
+  <h5>Open/Close a box</h5>
+  <nav>
+    <button (click)="toggle()">Toggle</button>
+  </nav>
+
+  <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+    <p>box</p>
+    <!--<p>The box is now {{ isOpen ? 'Open' : 'Closed'}}!</p>-->
+  </div>
+</div>
+
+
+<div class="card testCard">
+  <h5>Balloon Effect</h5>
+  <p>click on the balloon</p>
+  <div (click)="changeState()"
+       style="width:100px;height:100px; border-radius: 100%; margin: 3rem; background-color: green"
+       [@balloonEffect]=currentState>
+  </div>
+</div>
+
+<div class="card testCard">
+  <h5>Shake Effect</h5>
+  <p> hover over the cube</p>
+
+  <div style="width:100px;height:100px; border-radius: 5%; margin: 3rem; background-color: blue"
+       class="shakeit">
+  </div>
+</div>
+
+<div class="card testCard">
+  <h5>Rotate Effect</h5>
+  <button [@rotatedState]='rotationState' (click)="rotate()">Press me to rotate</button>
+</div>
+
+<div class="card testCard">
+  <h5>Move Effect</h5>
+  <div class="moving-left" #moveLeft>
+    <img src="assets\RedVonixSquooshed.jpg" width="100" height="100"/>
+  </div>
+  <button (click)="onMove(moveLeft)"> Move Left </button>
+</div>

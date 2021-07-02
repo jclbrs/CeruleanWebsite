@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -17,6 +18,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CompanyDeckComponent } from './company-deck/company-deck.component';
+import { Test1Component } from './test1/test1.component';
 
 @NgModule({
   declarations: [
@@ -31,19 +33,22 @@ import { CompanyDeckComponent } from './company-deck/company-deck.component';
     MessagesComponent,
     AboutComponent,
     ContactComponent,
-    CompanyDeckComponent
+    CompanyDeckComponent,
+    Test1Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'cerulean-portfolio', component: PortfolioComponent },
       { path: 'cerulean-about', component: AboutComponent },
       { path: 'cerulean-contact', component: ContactComponent },
       { path: 'cerulean-company-deck', component: CompanyDeckComponent },
+      { path: 'app-test1', component: Test1Component },
     //{ path: 'counter', component: CounterComponent },
     //  { path: 'fetch-data', component: FetchDataComponent },
     //  { path: 'heroes', component: HeroesComponent},
