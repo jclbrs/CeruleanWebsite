@@ -16,6 +16,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { CompanyDeckComponent } from './company-deck/company-deck.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ContactComponent } from './contact/contact.component';
     HeroDetailComponent,
     MessagesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    CompanyDeckComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -41,6 +43,7 @@ import { ContactComponent } from './contact/contact.component';
       { path: 'cerulean-portfolio', component: PortfolioComponent },
       { path: 'cerulean-about', component: AboutComponent },
       { path: 'cerulean-contact', component: ContactComponent },
+      { path: 'cerulean-company-deck', component: CompanyDeckComponent },
     //{ path: 'counter', component: CounterComponent },
     //  { path: 'fetch-data', component: FetchDataComponent },
     //  { path: 'heroes', component: HeroesComponent},
